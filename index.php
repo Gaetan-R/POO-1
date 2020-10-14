@@ -17,6 +17,12 @@ $tornado->color = 'black';
 $tornado->currentSpeed = 0;
 
 $car = new Car();
+$car->getNbWheel();
+$car->getcolor();
+$car->getCurrentSpeed();
+$car->getNbSeat();
+$car->getEnergy();
+$car->getFuelLevel();
 
 
 $tornado->dump();
@@ -42,4 +48,5 @@ echo $car->forward();
 echo '<br> Vitesse de la voiture : ' . $car->currentSpeed . 'km/h' . '<br>';
 echo $car->brake();
 echo '<br> Vitesse de la voiture : ' . $car->currentSpeed . ' km/h' . '<br>';
+
 
