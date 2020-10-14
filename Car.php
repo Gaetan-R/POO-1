@@ -23,14 +23,15 @@ class Car
     }
 
 
-    public function __construct()
+    public function __construct(int $nbWheel = 4,string $color = 'red',int $nbSeat = 5, string $energy = 'gazoline',
+    int $fuelLevel = 100)
     {
-        $this->nbWheel = $nbWheel = 4;
+        $this->nbWheel = $nbWheel;
         $this->currentSpeed = $currentSpeed = 15;
-        $this->color = $color = 'red';
-        $this->nbSeat = $numberSeat = 5;
-        $this->energy = $energy = 'gazoline';
-        $this->fuelLevel = $fuelLevel = 100;
+        $this->color = $color;
+        $this->nbSeat = $nbSeat;
+        $this->energy = $energy;
+        $this->fuelLevel = $fuelLevel;
 
     }
 
@@ -84,7 +85,7 @@ class Car
     }
 
 
-    public function color(): string
+    public function getcolor(): string
     {
         return $this->color;
     }
