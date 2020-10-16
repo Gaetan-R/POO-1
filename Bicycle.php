@@ -69,3 +69,4 @@ class Bicycle
             $this->currentSpeed = $currentSpeed;
         }
     }
+}
